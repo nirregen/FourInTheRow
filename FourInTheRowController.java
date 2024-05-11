@@ -73,11 +73,11 @@ public class FourInTheRowController {
     public void createcircle(int columnIndex) {
         // check if it turn player one or player two
         if (player == 1) {// player one play
-            creatColerCircle(columnIndex, Color.BLACK);//create red circle 
+            creatColerCircle(columnIndex, Color.RED);//create red circle 
             gameLogic.addPlayerCercle(columnIndex, player);// Update game logic for player 1
             player = 2;// give the next turn to player two
         } else {// player two play
-            creatColerCircle(columnIndex, Color.YELLOW);// Create a blue circle
+            creatColerCircle(columnIndex, Color.BLUE);// Create a blue circle
             gameLogic.addPlayerCercle(columnIndex, player);// Update game logic for player 2
             player = 1;// give the next turn to player one
         }
